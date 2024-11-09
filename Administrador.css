@@ -1,0 +1,97 @@
+:root{ 
+    --Fondo: #fcfcfc; 
+    --Menú: #8B97AA; 
+    --Login: #aee0f3;; 
+    --letra:#000000,#333333 ;
+}
+.cabecera { 
+ background-color: #8B97AA;
+ position:fixed; 
+ top:0;
+ left:0;
+ width: 100%;
+ transition: top 0.3s;
+ padding: 15px;
+ overflow: hidden;
+}
+.logo {
+position: fixed;
+align-self: flex-start;
+flex: 0 0 auto;
+}
+.img{
+    z-index: 900;
+    margin-top: 8px;
+    margin-left: 20px;
+    box-shadow: inset;
+}
+.menu{
+    display: inline-flex;
+    text-align: center;
+    float: right;
+}
+.menu>ul{
+    float: right;
+    display: inline-flex;
+    text-decoration: none;
+    right: 2;
+    list-style-type: none;
+}
+menu>ul>li{
+    padding:  10px;
+    text-decoration: none;
+    list-style: none;
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    color: #333333;
+    padding: 10px;
+}
+.menu>ul>li> a:hover{
+    color: #fcfcfc;
+    padding: 20px;
+    background-color: #bdc6db;
+    border-radius: 5px;
+
+}
+
+.login {
+    background-color: white;
+   padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+       }
+
+       .login h2 {
+           text-align: center;
+           margin-bottom: 20px;
+       }
+
+       .login input[type="text"], .login input[type="password"] {
+           width: 100%;
+           padding: 10px;
+           margin: 10px 0;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+           box-sizing: border-box;
+       }
+
+       .login input[type="submit"] {
+           width: 100%;
+           padding: 10px;
+           background-color:#8B97AA ;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+       }
+
+       .login input[type="submit"]:hover {
+           background-color: #bdc6db;
+       }
+.footer{ 
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}

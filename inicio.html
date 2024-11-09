@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Librerías</title>
+    <link rel="icon" type="image/png" href="Media/image/logo.png"> 
+    <link rel="stylesheet" href="prueba3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="logo">
+            <img src="Media/image/logo.png" alt="Logo de la página" width="60" height="60">
+        </div>
+        <nav class="menu">
+            <ul class="hList">
+                <li>
+                    <a href="#Inicio" class="menu-title">Inicio</a>
+                    <ul class="menu-dropdown">
+                    <li><a href="#Nosotros">Nosotros</a></li>
+                   <li><a href="#Preguntas frecuentes y redes">Preguntas frecuentes y redes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Names" class="menu-title">Registrate</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="Registro_administrador.html">Estudiante</a></li>
+                        <li><a href="Registro_encargado.html">Encargado</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Things" class="menu-title">inicio sesion</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="Iniciodesesion.html">Iniciar sesion</a></li>
+                     
+                    </ul>
+                </li>
+                <li>
+                    <a href="#Movies" class="menu-title">Contactanos</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="Contactanos.html">Contactanos</a></li>
+                    </ul>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    
+    <!-- Carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Media/image/biblioteca.png" class="d-block w-100" alt="Biblioteca">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>¡BIENVENIDX!</h5>
+                    <p>Los libros son un lugar para imaginar.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Media/image/biblioteca2.0.jpg" class="d-block w-100" alt="Biblioteca 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestra Intencionalidad</h5>
+                    <p>La intencionalidad de este proyecto es tener un mejor inventario de la biblioteca, 
+                        controlando la entrada y salida de libros.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Media/image/biblioteca3.0.jpg_large" class="d-block w-100" alt="Biblioteca 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nuestra Necesidad</h5>
+                    <p>Este proyecto responde a una demanda institucional clave: 
+                        mejorar el uso y acceso a los recursos bibliográficos.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Sección Nosotros -->
+    <section id="Nosotros">
+        <div id="institucion" style="width: 45%; float: right;">
+            <article>
+                <h3>I.E. José Roberto Vásquez</h3>
+                <p>La Institución Educativa José Roberto Vásquez brinda educación de calidad a la comunidad desde hace más de 25 años, ofreciendo servicios educativos en los niveles de preescolar, básica y media.</p>
+            </article>
+        </div>
+        <div id="inventario" style="width: 45%; float: left;">
+            <article>
+                <h3>Control de Librerías</h3>
+                <p>El proyecto optimiza la gestión bibliotecaria mediante una plataforma digital, modernizando los procesos de registro, préstamo y devolución de libros para mejorar la organización y fomentar la autonomía de los usuarios.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección Preguntas Frecuentes 
+    <section id="Preguntas frecuentes y redes">
+        <h3>Preguntas Frecuentes</h3>
+        <ul>
+            <li>¿Cómo puedo registrarme?</li>
+            <li>¿Cómo puedo hacer la prestación de un libro?</li>
+            <li>¿Cualquier persona ingresa al inventario?</li>
+        </ul>
+       
+        <div>
+            <h3>Visítanos</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0856165620532!2d-75.57190378570896!3d6.249608995444462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fd4d839251%3A0x9ae95a84d5f4d08!2sTerminal%20del%20Norte!5e0!3m2!1ses!2sco!4v1684773159744!5m2!1ses!2sco" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section>
+        <div class="Image-institucion">
+            <img src="Media/image/IMG_20210827_112138.jpg">
+        </div>
+    </section> -->
+    <section id="contenido">
+        <div id="faq-y-redes">
+            <div class="faq">
+                <h3>Preguntas Frecuentes</h3>
+                <ul>
+                    <li>¿Cómo puedo registrarme?</li>
+                    <li>¿Cómo puedo hacer la prestación de un libro?</li>
+                    <li>¿Cualquier persona ingresa al inventario?</li>
+                </ul>
+            </div>
+            <div class="visit">
+                <h3>Visítanos</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0856165620532!2d-75.57190378570896!3d6.249608995444462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428fd4d839251%3A0x9ae95a84d5f4d08!2sTerminal%20del%20Norte!5e0!3m2!1ses!2sco!4v1684773159744!5m2!1ses!2sco" 
+             width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    
+        <div class="Image-institucion">
+            <img src="Media/image/IMG_20210827_112138.jpg" alt="Imagen de la institución"
+            width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer 
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 La José Roberto Vásquez. Todos los derechos reservados.</p>
+          <img src="Media/image/logo.png"alt="Logo">
+        <img src="logo pascual.png" alt="logo pascual">
+    </div>
+      
+
+ <div class="redes-sociales">
+            <a href="https://web.facebook.com" target="_blank"><img src="Media/image/facebook.png" alt="Facebook"></a>
+            <a href="https://mail.google.com" target="_blank"><img src="Media/image/Gmail.png" alt="Gmail"></a>
+            <a href="https://x.com/" target="_blank"><img src="Media/image/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="Media/image/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="Media/image/Youtube.png" alt="YouTube"></a>
+            <a href="https://www.whatsapp.com" target="_blank"><img src="Media/image/Whatsapp.png" alt="WhatsApp"></a>
+        </div>
+ </footer>-->
+ <!-- Footer -->
+<footer class="footer">
+ 
+  <div class="logos-colib">
+            <img src="Media/image/logo.png" alt="Logo-colib">
+              </div>
+        
+          <div class="logos-pascual"> 
+            <img src="Media/image/images.png" alt="Logo Pascual" class="logo-pascual">
+        </div>
+    <div class="redes-sociales">
+        <a href="https://web.facebook.com" target="_blank"><img src="Media/image/facebook.png" alt="Facebook"></a>
+        <a href="https://mail.google.com" target="_blank"><img src="Media/image/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Gmail"></a>
+        <a href="https://x.com/" target="_blank"><img src="Media/image/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-p.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="Media/image/sm_5b37de3263964 (1).png" alt="Instagram"></a>
+        <a href="https://www.youtube.com" target="_blank"><img src="Media/image/youtube-icon-logo-719479.png" alt="YouTube"></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img src="Media/image/WhatsApp.svg.png" alt="WhatsApp"></a>
+    </div>
+    
+    <div class="container">
+        <p>&copy; 2024 La José Roberto Vásquez. Todos los derechos reservados.</p>
+      
+    </div>
+
+</footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+</html>

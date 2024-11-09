@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de inventarios</title>
+    <link rel="icon" type="image/png" href="Media/image/logo.png"> 
+    <link rel="stylesheet" type="text/css" href="Inicio_sesion.css"> 
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="logo">
+            <!-- Logo -->
+            <img class="img" src="Media/image/logo.png" alt="Logo de la página" width="60" height="60">
+        </div>
+        <!-- Menú sistema de inventarios -->
+        <nav class="menu">
+            <ul><!-- Etiqueta de lista desordenada o viñeta -->
+                <!-- Etiqueta "<li>" para los elementos. la etiqueta "<a>" para los enlaces-->
+                <li><a href="inicio.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login">
+        <h2>Iniciar Sesión</h2>
+        <center>
+        <h5>Inicia para continuar</h5>
+        </center>
+        <form action="/login" method="POST">
+            <label for="username">Nombre de Usuario o correo electronico</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Iniciar Sesión"> <br>
+            <center>
+            <a href="Olvidaste_tu_contraseña.html"><h5>¿Olvidaste tu contraseña?</h5></a>
+            <a href="Registro_administrador.html"><h5>¿No tienes cuenta?¡Registrate!</h5></a>
+            </center>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <center>
+        <p>&copy; 2024 La Jose Roberto Vásquez. Todos los derechos reservados.</p>
+        </center>
+    </footer>
+</body>
+</html>

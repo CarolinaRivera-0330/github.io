@@ -1,0 +1,306 @@
+/* Menú de navegación */
+.cabecera {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10; /* Asegura que el menú esté encima del carrusel */
+ 
+    
+}
+
+.logo img {
+    width: 60px;            /* Ajusta el tamaño según tus necesidades */
+    height: 60px;
+    border-radius: 50%;     /* Hace el logo circular */
+    object-fit: cover;      /* Asegura que la imagen se ajuste bien en el círculo */
+    margin-left: 20px;
+    border: 2px solid #ffffff; /* Borde opcional alrededor del logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto */
+}
+
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    z-index: 1; /* Asegura que esté debajo del menú */
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejor contraste */
+}
+
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra ligera para el texto */
+    max-width: 60%;           /* Limita el ancho para que el texto no se extienda demasiado */
+    margin: 0 auto;           /* Centra el texto dentro del contenedor */
+}
+
+.carousel-caption {
+    bottom: 20%;              /* Ajusta la posición vertical del texto */
+    text-align: center;       /* Centra el texto en el medio de la imagen */
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente detrás del texto */
+    padding: 50px;            /* Espacio alrededor del texto */
+    border-radius: 50px;      /* Bordes redondeados para un estilo más suave */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+.cabecera .logo img {
+    margin-right: 20px;
+}
+
+.cabecera .menu ul.hList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+
+}
+
+.cabecera .menu ul.hList li {
+    position: relative;
+}
+
+.cabecera .menu ul.hList .menu-title {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 40px; /* Ajusta según la cantidad de desplazamiento necesario */
+   
+
+    
+}
+
+.cabecera .menu ul.hList .menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #495057;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: -10px; /* Ajusta según la cantidad de desplazamiento necesario */
+   
+    
+}
+
+.cabecera .menu ul.hList li:hover .menu-dropdown {
+    display: block;
+}
+
+.cabecera .menu ul.hList .menu-dropdown li {
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sección del carrusel */
+.carousel-inner img {
+    max-height: 600px;
+}
+
+.carousel-caption h5 {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+}
+
+/* Sección Nosotros */
+#Nosotros {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+}
+
+#Nosotros article {
+    max-width: 500px;
+}
+
+#Nosotros h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+#Nosotros p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+#contenido {
+    display: flex;
+    gap: 20px;
+}
+
+#faq-y-redes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1; /* Ocupa menos espacio que la imagen */
+}
+
+.Image-institucion {
+    flex: 2; /* Ocupa más espacio que el contenedor de preguntas y mapa */
+    margin-left: 80px;
+}
+
+.Image-institucion img {
+    width: 90%;
+    height: auto;
+}
+
+.visit iframe {
+    width: 100%;
+    height: 300px; /* Tamaño adecuado para mostrar el mapa más claramente */
+}
+
+
+/* Sección Preguntas Frecuentes 
+#Preguntas\ Frecuentes {
+    padding: 40px 20px;
+    background-color: #f1f3f5;
+}
+
+#Preguntas\ Frecuentes h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+#Preguntas\ Frecuentes ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#Preguntas\ Frecuentes ul li {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Redes Sociales 
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Mapa 
+#Preguntas\ Frecuentes iframe {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* Footer 
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    position: above;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer img {
+    width: 150px;
+    height: auto;
+}*/
+
+/* Footer CSS */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .logos-colib {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  
+}
+
+.footer .logos-pascual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  
+}
+
+.footer .logos-colib img {
+    width: 60px;
+    height: auto;
+    border-radius: 60%;
+}  
+
+.footer .logos-pacual img {
+    width: 60px;
+    height: auto;
+    
+}  
+
+.footer .logos-pascual {
+    background-color: rgb(0, 0, 0); /* Ajuste para que el fondo se integre mejor */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.redes-sociales {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes-sociales img {
+    width: 35px;
+    height: auto;
+    border-radius: 60%; /* Hace las imágenes circulares */
+    background-color: white; /* Fondo blanco para destacar los iconos */
+    padding: 0px; /* Espacio entre el icono y el borde */
+}

@@ -1,0 +1,131 @@
+:root { 
+    --fondo: #fcfcfc; 
+    --menu: #313131; 
+    --login:#313131;
+    --hover: #bdc6db;
+    --letra: #000000; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cabecera { 
+    background-color: var(--menu);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    transition: top 0.3s;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.logo img {
+  
+      position:fixed;
+        width: 60px;            /* Ajusta el tamaño según tus necesidades */
+        height: 60px;
+        border-radius: 50%;     /* Hace el logo circular */
+        object-fit: cover;      /* Asegura que la imagen se ajuste bien en el círculo */
+        margin-left: 20px;
+        border: 2px solid #ffffff; /* Borde opcional alrededor del logo */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto */
+  
+    
+}
+
+
+
+.menu {
+    display: inline-flex;
+    text-align: center;
+    float: right;
+}
+
+.menu > ul {
+    display: inline-flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.menu > ul > li {
+    padding: 10px;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: var(--letra);
+    padding: 10px;
+}
+
+.menu > ul > li > a:hover {
+    color: #fcfcfc;
+    padding: 20px;
+    background-color: var(--hover);
+    border-radius: 5px;
+}
+
+.login {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login input[type="text"], 
+.login input[type="password"], 
+.login input[type="date"], 
+.login input[type="email"], 
+.login select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--menu);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: var(--hover);
+}
+
+.c-box{
+    width:50%;
+    display:inline-block;
+}
+.c-left{
+    float:left;
+}
+.c-right{
+    float:right;
+}
+
+.footer { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

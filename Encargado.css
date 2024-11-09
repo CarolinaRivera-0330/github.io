@@ -1,0 +1,80 @@
+/* Añadimos algunas variables para los colores de los bordes y el fondo de los cuadros */
+:root { 
+    --Fondo: #fcfcfc; 
+    --Menú: #8B97AA; 
+    --Login: #aee0f3;
+    --Hover: #bdc6db;
+    --letra-principal: #000000;
+    --letra-secundaria: #333333;
+    --border-color: #ddd; /* Color de los bordes */
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para los cuadros */
+}
+
+/* ... (resto de tus estilos) */
+
+
+/* Estilos para el cuadro de selección de sala */
+.select-sala {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 300px;
+    border: 1px solid var(--border-color);
+}
+
+.select-sala h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.select-sala label {
+    display: block;
+    margin: 10px 0 5px 0;
+}
+
+.select-sala select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Añadimos un estilo para los botones de selección */
+.select-sala button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Menú);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-sala button[type="submit"]:hover {
+    background-color: var(--Hover);
+}
+
+/* Ajustamos los estilos para el contenedor principal */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Ajustamos los estilos para el footer */
+.footer {
+    background-color: #f2f2f2; 
+    padding: 20px; 
+    text-align: center; 
+    clear: both; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    border-top: 1px solid var(--border-color);
+}
